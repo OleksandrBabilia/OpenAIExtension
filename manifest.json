@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "ChatGPT Test Solver Extension",
+    "description": "Extension to solve tests on moodle based platforms",
+    "version": "1.0",
+    "action": {
+      "default_popup": "frontend/index.html"
+    },
+    "icons": {
+        "16": "backend/static/img/icon-16.png",
+        "19": "backend/static/img/icon-19.png",
+        "38": "backend/static/img/icon-38.png",
+        "48": "backend/static/img/icon-48.png",
+        "128": "backend/static/img/icon-128.png"
+      }
+  }
