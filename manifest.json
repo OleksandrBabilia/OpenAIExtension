@@ -7,10 +7,14 @@
       "default_popup": "frontend/index.html"
     },
     "icons": {
-        "16": "backend/static/img/icon-16.png",
-        "19": "backend/static/img/icon-19.png",
-        "38": "backend/static/img/icon-38.png",
-        "48": "backend/static/img/icon-48.png",
-        "128": "backend/static/img/icon-128.png"
-      }
-  }
+      "16": "backend/static/img/icon-16.png",
+      "19": "backend/static/img/icon-19.png",
+      "38": "backend/static/img/icon-38.png",
+      "48": "backend/static/img/icon-48.png",
+      "128": "backend/static/img/icon-128.png"
+    },
+    "host_permissions": [ 
+      "http://127.0.0.1:8000/"
+    ]
+
+}
