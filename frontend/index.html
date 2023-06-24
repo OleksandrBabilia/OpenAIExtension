@@ -2,14 +2,14 @@
 <html>
     <head>
         <title>Base</title>
-        
     </head>
     <body>
-        <h1>Test</h1>
-        <button id="sendrequest"type="submit">GO</button>
-
-        <script src="popup.js"></script>
+        <h1>Enter username and login for your moodle acc</h1>
+        <input type="text" id="username" name="username" placeholder="username" required>
+        <input type="password" id="password" name="password" placeholder="password" required>
+        <button id="send-request"type="submit">GO</button>
         <h2>Result:</h2>
-        <h3 id="result"></h3>
+        <ul id="result-list"></ul>
+        <script src="popup.js"></script>
     </body>
 </html>
