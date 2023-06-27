@@ -13,4 +13,5 @@ def generate_response(question: str):
         prompt=question,
         max_tokens=40 
     )
+    
     return response.choices[0].text.strip()

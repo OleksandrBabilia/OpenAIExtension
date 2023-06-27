@@ -19,6 +19,6 @@ def authenticate(username: str, password: str, login_url: str):
     if response.status_code == 200:
         print('Authentication successful.')
         return session
-    else:
-        print('Authentication failed.')
-        return None
+    
+    print('Authentication failed.')
+    return None
