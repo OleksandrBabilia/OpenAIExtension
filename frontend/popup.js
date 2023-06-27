@@ -14,9 +14,16 @@ document.getElementById('send-request').addEventListener('click', function() {
                 return response.json();
             })
             .then(function(data) {
-                var resultElement = document.getElementById('result');
-                resultElement.textContent = data.data;
-                console.log(data);
+                if (data.success) {
+                    var ul = document.getElementById("result-list");
+                    var dataList = data.data;
+            
+                    dataList.forEach(function(item) {
+                        var li = document.createElement("li");
+                        li.textContent = item;
+                        ul.appendChild(li);
+                    });
+                }
             })
             .catch(function(error) {
                 console.log('Request failed:', error);
