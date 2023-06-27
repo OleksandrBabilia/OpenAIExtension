@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup as BS
 
 from authentication import authenticate
 
-def parse(username: str, password:str, page_url: str) -> list[str]:
+def parse(username: str, password:str, page_url: str):
     login_url = 'https://vns.lpnu.ua/login/index.php'
 
     session = authenticate(username, password, login_url)

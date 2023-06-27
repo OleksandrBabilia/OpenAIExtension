@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup as BS
 
-def authenticate(username: str, password: str, login_url: str) -> None:
+def authenticate(username: str, password: str, login_url: str):
     session = requests.Session()
 
     response = session.get(login_url)
